@@ -1,12 +1,17 @@
 import React, { Component } from "react";
-import "./App.css";
+import Navbar from "./components/Navbar/NavBar";
+import MuiThemeProvider from "material-ui/styles/MuiThemeProvider";
+import Search from "./components/Search/Search";
 
 class App extends Component {
   render() {
     return (
-      <div className="App">
-        <h1>PixaBay APi</h1>
-      </div>
+      <MuiThemeProvider>
+        <div>
+          <Navbar />
+          <Search />
+        </div>
+      </MuiThemeProvider>
     );
   }
 }
